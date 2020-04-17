@@ -11,4 +11,6 @@ data.close()
 for word in data_box:
     print(word)
 
+print("completed")
+
     
