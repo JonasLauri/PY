@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# 5 Basic calculator
+# standart 5 math operation calculator
 import math
 from math import sqrt
 
