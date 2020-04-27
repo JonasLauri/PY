@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # dictionary lookup and recursion calculator
 from operator import add, sub, mul, truediv
 
@@ -18,5 +19,7 @@ def calculate(a):
             return operators[operator](calculate(left), calculate(right))
 
 
-calc = input("Enter your calculation:\n")
+calc = input("Enter your calculation:\n").replace(" ", "")
 print("Answer: " + str(calculate(calc)))
+
+
