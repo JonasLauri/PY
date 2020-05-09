@@ -9,8 +9,8 @@ for folderName, subFolders, fileName in os.walk('/Users/jonaslaurinaitis/Desktop
     print('The filenames in ' + folderName + ' are: ' + str(fileName))
     print()
 
-    for file in fileName:
-        if file in ["file.txt", "files.py", "shelfiles"]:
+    #for file in fileName:
+        #if file in ["file.txt", "files.py", "shelfiles"]:
             try:
                 shutil.copy(os.path.join(folderName, file), path)
             except shutil.SameFileError:
