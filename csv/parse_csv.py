@@ -10,7 +10,7 @@ with open('Per the International Monetary Fund (2019 estimates).csv', 'r') as  c
             "GDP(US$million)",
             "Rank"
         ]
-        csv_writer = csv.DictWriter(new_file, headers, dialect='excel')
+        csv_writer = csv.DictWriter(new_file, headers, delimiter=';')
         csv_writer.writeheader()
         for line in csv_reader:
             csv_writer.writerow(line)
