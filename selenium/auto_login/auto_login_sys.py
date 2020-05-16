@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# This script makes auto login at letterboxd website
+# This script makes login automatically at letterboxd website
 from selenium import webdriver
 import sys
 
