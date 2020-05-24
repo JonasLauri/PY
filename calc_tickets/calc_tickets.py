@@ -19,7 +19,7 @@ def buy_tickets():
         print(f"Something went wrong. {err}" )
     else:
         price = calculate_price(num_tickets)
-        tickets_remaining = tickets_remaining - num_tickets
+        tickets_remaining -= num_tickets
         print(f"Final price will be : ${price}")
 
 def buy_more():
@@ -34,4 +34,4 @@ while tickets_remaining >= 1:
         break
     if not buy_more():
         break
-    
+     
