@@ -1,6 +1,7 @@
 from random import randint
 
 class Die:
+    # Init dtheie characteristics
     def __init__(self, sides=2, value=0):
         if not sides >= 2:
             raise ValueError("Must have at least 2 sides")
@@ -35,8 +36,14 @@ class Die:
     def __radd__(self, other):
         return int(self) + other
 
+    def __len__(self):
+        return int(self)
 
-# Make subclass for 6 sides die
+    def __repr__(self):
+        return str(self.value)
+
+
 class D6(Die):
+    # Die subclassing for 6 sided die
     def __init__(self, value=0):
         super().__init__(sides=6, value=value)
